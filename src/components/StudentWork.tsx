@@ -127,12 +127,12 @@ export default function StudentWork() {
           </Avatar>
           <div>
             <h1 className="text-2xl font-bold text-gray-800">{student.name}</h1>
-            <p className="text-sm text-gray-600">
+            <div className="text-sm text-gray-600">
               Atelier #{workshopId} • Dernière évaluation: {' '}
               <Badge variant="secondary" className={`${getGradeColor(student.previousGrade)} text-white`}>
                 {getGradeLabel(student.previousGrade)}
               </Badge>
-            </p>
+            </div>
           </div>
         </div>
       </div>
